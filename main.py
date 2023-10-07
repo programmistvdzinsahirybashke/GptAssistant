@@ -57,8 +57,9 @@ async def send_response(message):
 @bot.message_handler(text=['Help'])
 async def request_group(message):
     await bot.send_message(message.chat.id, """"This is a bot that sends your request to the AI "text-davinci-003" 
-    and you get a response from it in the form of a message. To start, click the "New Request for GPT" button. Before 
-    each request, click this button. """)
+and you get a response from it in the form of a message. 
+
+To start, click the "New Request for GPT" button. Before each request, click this button. """)
 
 
 if __name__ == "__main__":
